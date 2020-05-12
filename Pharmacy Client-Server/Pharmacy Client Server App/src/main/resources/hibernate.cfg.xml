@@ -1,0 +1,24 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- JDBC Database connection settings -->
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/pharmacy</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="hibernate.enable_lazy_load_no_trans">true</property>
+        <property name="current_session_context_class">thread</property>
+
+
+        <mapping class="model.Drug"/>
+        <mapping class="model.User"/>
+        <mapping class="model.Admin"/>
+        <mapping class="model.DrugFavorite"/>
+        <mapping class="model.Pharmacy"/>
+
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,25 @@
+## Application Description
+
+* I used Java to design and implement a client-server desktop application for a Pharmacy. The application has two types of users (a regular user and an administrator user) which
+have to provide a username and a password in order to use the application.
+* I used Java Socket programming for client-server part, Factory Method Design Pattern to select which type of reports to create, Builder Design Pattern to create objects, 
+Hibernate for Database and FXML for Graphical User Interface.
+
+## Project features:
+
+- The regular user can perform the following operations:
+* Search the list of drugs (type, name, price, rating, etc.)
+* Buy one item at a time with his money. 
+* Can add multiple items to the cart before buying them, provided they are still in stock
+* Can rate once the drugs (between 1-5 stars) and also search by rating. 
+* Can add drugs to their favourites list and they can see how the prices evolved during the last 1 month.
+
+- The administrator can perform the following operations:
+* CRUD on drugs.
+* CRUD on regular users' information.
+* Can generate two types of report files, one in pdf format and one in txt or html format, with the bought items, which saved in a **user-selected location** 
+* Can set specific drugs to be discounted X% if they were bought more than Y times by that specific user
+* Can edit the ratings.
+* The pharmacy has a specific amount of money that can discount official-drugs. Once that amount is depleted, no more discounts are done for that month. 
+The administrator can update the current amount.
+

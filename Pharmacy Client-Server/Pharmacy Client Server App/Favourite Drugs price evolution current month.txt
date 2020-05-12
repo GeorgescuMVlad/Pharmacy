@@ -1,0 +1,8 @@
+					Report With Favourite Drugs Price Evolution Last Month
+
+Price evolution 
+
+Product: Ceai changed price to: 3.64 at date: 2020/04/23
+Product: Ceai changed price to: 3.99 at date: 2020/05/03
+Product: Vitamina C changed price to: 16.21 at date: 2020/04/23
+Product: aaa changed price to: 12.22 at date: 2020/05/01
